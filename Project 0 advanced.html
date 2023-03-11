@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image Search</title>
+        <style>
+            input[type=text] {
+                border: gainsboro 2px;
+                border-style: solid;
+                border-radius: 12px;
+                padding: 12px;
+                width: 600px;
+                font-size: 13px;
+            }
+            input[type=submit] {
+                border: none;
+                color: coral;
+                padding: 15px;
+                background-color: white;
+                font-size: 24px;
+            }
+            input[type=submit]:hover {
+                border: none;
+                color: gold;
+                padding: 15px;
+                background-color: white;
+                font-size: 25px;
+            }
+            #but1, #but2 {
+                border: none;
+                color: dimgray;
+                padding: 15px;
+                background-color: white;
+                font-size: 12px;
+                position: relative;
+                left: 85%
+            }
+            #but1:hover, #but2:hover {
+                border: none;
+                color: black;
+                padding: 10px;
+                background-color: white;
+                font-size: 13px;
+            }
+            body {
+                background-color: snow;
+            }
+            p {
+                text-align: right;
+                transform: translate(-42%);
+            }
+            #adv {
+                border: none;
+                border-radius: 12px;
+                color: white;
+                padding: 10px;
+                background-color:cornflowerblue;
+                font-size: 13px;
+                transform: translate(573%)
+            }
+            #adv:hover {
+                border: none;
+                border-radius: 20px;
+                color: white;
+                padding: 10px;
+                background-color:rgb(120, 214, 243);
+                font-size: 14px;
+                transform: translate(536%)
+            }
+            a, u {
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="file:///C:/Users/Elijah%20Colston/Desktop/notes/HTML%20code%20projects/CS50w/0.%20HTML%2C%20CSS/index.html" id="but1">Google Search</a>
+        <a href="file:///C:/Users/Elijah%20Colston/Desktop/notes/HTML%20code%20projects/CS50w/0.%20HTML%2C%20CSS/Project%200%20images.html" id="but1">Image Search</a>
+        <form action="https://www.google.com/search">
+            <input type="submit" value="Advanced Search"><br>
+            <h3>Find pages with...</h3><br>
+            <p>All these words: <input type="text" name="as_q"></p>
+            <p>This exact word or phrase: <input type="text" name="as_epq"></p>
+            <p>Any of these words: <input type="text" name="as_oq"></p>
+            <p>None of these words: <input type="text" name="as_eq"></p>
+            <input type="submit" value="Advanced Search" id="adv">
+        </form>
+    </body>
+</html>

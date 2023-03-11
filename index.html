@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            input[type=text] {
+                border: gainsboro 2px;
+                border-style: solid;
+                border-radius: 40px;
+                padding: 12px;
+                width: 600px;
+                font-size: 13px;
+                display: block;
+                position: relative;
+            }
+            input[type=submit] {
+                border: none;
+                color: coral;
+                padding: 15px;
+                background-color: white;
+                font-size: 24px;
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, 50%);
+            }
+            input[type=submit]:hover {
+                border: none;
+                color: gold;
+                padding: 15px;
+                background-color: white;
+                font-size: 25px;
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, 50%);
+            }
+            #lilbut {
+                border: none;
+                color: dimgray;
+                padding: 10px;
+                background-color: white;
+                font-size: 12px;
+                display: inline-block;
+                position: absolute;
+                text-align: center;
+                top: 140%
+            }
+            #but1, #but2 {
+                border: none;
+                color: dimgray;
+                padding: 15px;
+                background-color: white;
+                font-size: 12px;
+                position: relative;
+                left: 85%
+            }
+            #lilbut:hover, #but1:hover, #but2:hover {
+                border: none;
+                color: black;
+                padding: 10px;
+                background-color: white;
+                font-size: 13px;
+
+            }
+            .container {
+                position: absolute;
+                top: 45%; left: 50%;
+                transform: translate(-50%);
+            }
+            body {
+                background-color: snow;
+            }
+            a, u {
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form action="https://www.google.com/search">
+                <input type="text" name="q">
+                <input type="submit" value="Google Search">
+                <br>
+                <br>
+                <input type="submit" name="btnI" value="I'm feeling lucky!" id="lilbut">
+            </form>
+        </div>
+        <a href="file:///C:/Users/Elijah%20Colston/Desktop/notes/HTML%20code%20projects/CS50w/0.%20HTML%2C%20CSS/Project%200%20images.html" id="but1">Image Search</a>
+        <a href="file:///C:/Users/Elijah%20Colston/Desktop/notes/HTML%20code%20projects/CS50w/0.%20HTML%2C%20CSS/Project%200%20advanced.html" id="but2">Advanced Search</a>
+    </body>
+</html>
